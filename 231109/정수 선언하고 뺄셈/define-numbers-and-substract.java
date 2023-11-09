@@ -3,6 +3,6 @@ public class Main {
         int a = 97;
         int b = 13;
         int c = a - b;
-        System.out.println(a + "-" + b + "=" + c);
+        System.out.println(a + " - " + b + " = " + c);
     }
 }
