@@ -3,6 +3,6 @@ public class Main {
         int a = 13;
         double b = 0.165000;
         double c = a*b;
-        System.out.println(a+ " * "+b + "=" + c);
+        System.out.println(a+ " * "+b + " = " + c);
     }
 }
