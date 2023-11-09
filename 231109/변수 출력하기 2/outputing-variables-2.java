@@ -3,6 +3,6 @@ public class Main {
         int a = 3;
         String b = "C";
         String comma = "!.....!";
-        System.out.println(a + comma+b);
+        System.out.println(b + comma+a);
     }
 }
