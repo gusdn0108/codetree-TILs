@@ -36,3 +36,13 @@
 [easy]: https://img.shields.io/badge/쉬움-%235cb85c.svg?for-the-badge
 [medium]: https://img.shields.io/badge/보통-%23FFC433.svg?for-the-badge
 [hard]: https://img.shields.io/badge/어려움-%23D24D57.svg?for-the-badge
+
+
+
+이 문제 같은경우  intelliJ 에서 
+
+```java
+sc.useDelimiter(":");
+```
+
+마지막 구분자를 명시적으로 입력해야 한다 코드트리에서는 잘 작동하는 코드
