@@ -9,7 +9,8 @@ public class Main {
         System.out.println(a+b);
         System.out.println(a - b);
         System.out.println(a/b);
-        System.out.println(Math.floorMod(a,b));
+//        System.out.println(Math.floorMod(a,b));
+        System.out.println(a % b);
 
     }
 }
