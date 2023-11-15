@@ -7,6 +7,5 @@ public class Main {
         for (int i = number; i <=35; i+=number) {
             System.out.print(i+" ");
         }
-
     }
 }
