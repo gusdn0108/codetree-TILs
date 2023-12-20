@@ -2,7 +2,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String c = sc.nextLine();
+        String c = sc.next();
         int n = sc.nextInt();
 
         if(Objects.equals(c, "A")){
