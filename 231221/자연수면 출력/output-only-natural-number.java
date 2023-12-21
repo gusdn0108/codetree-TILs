@@ -10,11 +10,13 @@ public class Main {
             for (int i = 0; i < b; i++) {
                 System.out.print(a);
             }
+        }else{
+            for (int i = 0; i < b; i++) {
+                System.out.print(0);
+            }
         }
 
-        if( a < 0){
-            System.out.print(0);
-        }
+        
         
     }
 }
