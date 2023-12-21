@@ -12,7 +12,7 @@ public class Main {
             }
         }
 
-        if( a < -1){
+        if( a < 0){
             System.out.print(0);
         }
         
