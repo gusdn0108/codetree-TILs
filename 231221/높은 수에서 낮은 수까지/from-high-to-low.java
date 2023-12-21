@@ -9,6 +9,10 @@ public class Main {
             for (int i = m; i >= n; i--) {
                 System.out.print(i+" ");
             }
+        }else {
+            for (int i = n; i >= m; i--) {
+                System.out.print(i+" ");
+            }
         }
 
         
