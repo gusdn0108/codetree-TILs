@@ -11,9 +11,9 @@ public class Main {
                 System.out.print(a);
             }
         }else{
-            for (int i = 0; i < b; i++) {
+    
                 System.out.print(0);
-            }
+
         }
 
         
