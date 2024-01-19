@@ -9,7 +9,7 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
             if(arr[i] % 3 == 0){
-                System.out.print(i);
+                System.out.println(i);
                 break;
             }
         }
