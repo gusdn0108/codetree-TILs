@@ -8,11 +8,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int[] array = new int[10];
         int sum = 0;
-        for (int i = 0; i <= array.length-1; i++) {
+        for (int i = 0; i < array.length; i++) {
             array[i] = sc.nextInt();
         }
 
-        sum += array[3]+array[5]+array[9];
+        sum += array[2]+array[4]+array[9];
 
         System.out.println(sum);
 
