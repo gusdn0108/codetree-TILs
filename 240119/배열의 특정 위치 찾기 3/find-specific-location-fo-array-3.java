@@ -6,19 +6,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int[] arr = new int[100];
-        int sum =0;
-
+        int k  = 0;
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
-        }
-
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i]== 0){
+            if(arr[i] == 0){
+                k = i;
                 break;
             }
-            sum+= arr[i];
         }
 
-        System.out.println(sum);
+        System.out.println(arr[k-3]+arr[k-2]+arr[k-1]);
     }
 }
