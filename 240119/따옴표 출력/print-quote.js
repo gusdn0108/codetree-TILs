@@ -1,1 +1,1 @@
-coonsole.log("He says \"It's a really simple sentence\".")
+coonsole.log("He says \"It\'s a really simple sentence\".")
