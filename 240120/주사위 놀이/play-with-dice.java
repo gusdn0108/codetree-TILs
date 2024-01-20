@@ -12,8 +12,6 @@ public class Main {
             countArr[arr[i]]++;
         }
 
-        System.out.println(Arrays.toString(arr));
-
         for (int i = 1; i <= 6; i++) {
             System.out.println(i+ " - "+ countArr[arr[i]]);
         }
