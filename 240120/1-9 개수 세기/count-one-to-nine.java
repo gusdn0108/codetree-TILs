@@ -10,13 +10,9 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
-        }
-
-
-
-        for (int i = 1; i <= 9; i++) {
             countArr[arr[i]]++;
         }
+
 
 
 
