@@ -5,20 +5,20 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         char[] arr = new char[]{'L', 'E', 'B', 'R', 'O', 'S'};
-        String s = sc.next();
-        String none = "None";
+        char s = sc.next().charAt(0);
+        boolean isContain = false;
 
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i]==s.charAt(0)){
+
+        for(int i =0; i < arr.length;i++ ){
+            if(arr[i] == s){
+                isContain = true;
                 System.out.print(i);
-                break;
-            }else {
-                System.out.print(none);
-                break;
             }
-
         }
 
+        if(!isContain){
+            System.out.print("None");
+        }
 
 
     }
