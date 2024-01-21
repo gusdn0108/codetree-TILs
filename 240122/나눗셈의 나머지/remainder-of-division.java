@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int[] arr = new int[b];
+        int[] arr = new int[10];
         while(a>1){
             arr[a%b]++;
             a/=b;
