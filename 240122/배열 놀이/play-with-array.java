@@ -10,18 +10,18 @@ public class Main {
         int q = sc.nextInt();
         int[] arr = new int[100];
 
-        for (int i = 0; i < arr.length; i++) {
+
+        for (int i = 0; i < n; i++){
             arr[i] = sc.nextInt();
         }
 
+
         for (int i = 0; i < q; i++) {
             int qType = sc.nextInt();
-
             if(qType == 1){
                 int a = sc.nextInt();
                 System.out.println(arr[a-1]);
             }
-
             else if(qType == 2){
                 int a = sc.nextInt();
                 int idx = -1;
@@ -33,8 +33,6 @@ public class Main {
                 }
                 System.out.println(idx+1);
             }
-
-
             else {
                 int a = sc.nextInt();
                 int b = sc.nextInt();
@@ -45,7 +43,6 @@ public class Main {
                 System.out.println();
             }
         }
-
     }
 
 
