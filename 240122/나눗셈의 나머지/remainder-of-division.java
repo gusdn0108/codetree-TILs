@@ -6,11 +6,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int[] arr = new int[10];
+        int[] arr = new int[b];
         while(a>1){
             arr[a%b]++;
             a/=b;
-        }
+        }4
         int sum = 0;
         for(int i = 0; i<arr.length; i++){
             sum+=arr[i]*arr[i];
