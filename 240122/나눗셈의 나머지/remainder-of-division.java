@@ -10,7 +10,7 @@ public class Main {
         while(a>1){
             arr[a%b]++;
             a/=b;
-        }4
+        }
         int sum = 0;
         for(int i = 0; i<arr.length; i++){
             sum+=arr[i]*arr[i];
