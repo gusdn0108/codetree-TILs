@@ -16,7 +16,6 @@ public class Main {
             }
         }
 
-        System.out.println(Arrays.toString(arr));
 
         for (int i = 0; i < arr.length; i++) {
             if(min > arr[i]){
@@ -29,7 +28,7 @@ public class Main {
                     max = arr[i];
                 }
         }
-        
+
 
         System.out.print(max+" "+min);
 
