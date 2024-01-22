@@ -21,7 +21,7 @@ public class Main {
         }
 
         for (int i = 0; i < n; i++) {
-            if(arr[i] == arr[i] ){
+            if(arr[0] == arr[i] ){
                 cnt++;
             }
         }
