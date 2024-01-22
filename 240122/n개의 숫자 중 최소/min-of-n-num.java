@@ -14,12 +14,17 @@ public class Main {
             arr[i] = sc.nextInt();
             if(min > arr[i]){
                 min = arr[i];
-                if( min == arr[i]){
-                    cnt++;
-                }
             }
-
         }
+
+        for (int i = 0; i < n; i++) {
+            if(min == arr[i]){
+                cnt++;
+            }
+        }
+
+
+
 
         System.out.print(min+" "+cnt);
 
