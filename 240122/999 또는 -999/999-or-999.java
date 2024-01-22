@@ -29,8 +29,7 @@ public class Main {
                     max = arr[i];
                 }
         }
-
-        System.out.println(max);
+        
 
         System.out.print(max+" "+min);
 
