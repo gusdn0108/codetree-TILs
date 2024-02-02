@@ -8,8 +8,9 @@ public class Main {
 
         for (int i = 0; i < 100; i++) {
             arr[i] = sc.nextInt();
-            sum += arr[i];
-            if( arr[i] == 0){
+            if(arr[i] == 0){
+                sum += arr[i-1]+arr[i-2]+arr[i-3];
+
                 break;
             }
         }
