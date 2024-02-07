@@ -24,12 +24,12 @@ public class Main {
             }
         }
 
-        if( sum >= sum2 ){
+        if( sum > sum2 ){
             System.out.print(sum - sum2);
         }
 
 
-        if( sum2 >= sum ){
+        if( sum2 > sum ){
             System.out.print(sum2 - sum);
         }
 
