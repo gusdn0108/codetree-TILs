@@ -10,7 +10,7 @@ public class Main {
             arr[i] = sc.nextInt();
             cnt++;
             if((i+1) % 3 == 0){
-                System.out.print(arr[cnt-1]);
+                System.out.print(arr[cnt-2]);
                 break;
             }
         }
