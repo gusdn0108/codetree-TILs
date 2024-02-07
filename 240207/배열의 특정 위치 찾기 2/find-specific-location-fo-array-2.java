@@ -24,7 +24,7 @@ public class Main {
             }
         }
 
-        if( sum > sum2 ){
+        if( sum >= sum2 ){
             System.out.print(sum - sum2);
         } else {
             System.out.print(sum2 - sum);
