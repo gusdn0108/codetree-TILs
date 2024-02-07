@@ -13,22 +13,22 @@ public class Main {
         }
 
         for (int i = 0; i < 10; i++) {
-            if(i % 2 == 0){
+            if(i % 2 ==0){
                 sum += arr[i];
-            }
-        }
-
-        for (int i = 0; i < 10; i++) {
-            if(i % 3 == 0){
+            }else {
                 sum2 += arr[i];
             }
         }
 
+
+
         if( sum >= sum2 ){
             System.out.print(sum - sum2);
-        } else {
+        }else {
             System.out.print(sum2 - sum);
         }
+
+
 
 
 
