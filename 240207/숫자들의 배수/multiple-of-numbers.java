@@ -12,9 +12,9 @@ public class Main {
             arr[i] = n * i;
             if(arr[i] % 5 == 0){
                 cnt++;
-                if( cnt == 2){
-                    break;
-                }
+            }
+            if( cnt == 2){
+                break;
             }
         }
 
