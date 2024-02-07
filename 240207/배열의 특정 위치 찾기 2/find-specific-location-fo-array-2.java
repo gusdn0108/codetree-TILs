@@ -26,10 +26,7 @@ public class Main {
 
         if( sum > sum2 ){
             System.out.print(sum - sum2);
-        }
-
-
-        if( sum2 > sum ){
+        } else {
             System.out.print(sum2 - sum);
         }
 
