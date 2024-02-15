@@ -5,14 +5,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[100];
-        int[] countArr = new int[9];
+        int[] countArr = new int[10];
 
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
             countArr[arr[i]]++;
         }
 
-        for (int i = 1; i < 9; i++) {
+        for (int i = 1; i <= 9; i++) {
             System.out.println(countArr[i]);
         }
 
