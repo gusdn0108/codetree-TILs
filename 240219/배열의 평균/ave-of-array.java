@@ -42,8 +42,8 @@ public class Main {
             for (int j = 0; j < 4; j++) {
                 sum += arr2d[i][j];
             }
-            System.out.printf("%.1f ",(double) sum / 8);
-
         }
+        System.out.printf("%.1f ",(double) sum / 8);
+        
     }
 }
