@@ -23,7 +23,7 @@ public class Main {
             }
         }
 
-        for (int startRow = 0; startRow < n; startRow++) {
+        for (int startRow = 1; startRow < n; startRow++) {
             int currRow = startRow;
             int currCol = m -1;
 
