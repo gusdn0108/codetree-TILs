@@ -9,19 +9,30 @@ public class Main {
         String str = sc.nextLine();
         String[] split = str.split(" ");
 
-        for (int i = 0; i < split.length; i++) {
-            int lan = split[i].length();
-            int lan2 = split[i+1].length();
+        int max = 0;
+        String answer = "";
+        boolean isSame = true;
 
-            if(lan > lan2){
-                System.out.print(split[i]+" "+lan);
-            } else if (lan2 > lan) {
-                System.out.print(split[i+1]+" "+lan2);
-            }else {
-                System.out.println("same");
+        for (int i = 0; i < split.length; i++) {
+            int len = split[i].length();
+
+            if (max < len) {
+                max = len;
+                answer = split[i];
             }
+
+            if (i > 0 && split[i].length() != split[i - 1].length()) {
+                isSame = false;
+            }
+
         }
 
+        if (isSame) {
+            System.out.println("same");
+        } else {
+            System.out.println(answer + " " + max);
+
+        }
 
 
     }
