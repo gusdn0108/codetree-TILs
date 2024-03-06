@@ -11,7 +11,7 @@ public class Main {
         int count = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i].charAt(0) == find){
+            if(arr[i].charAt(i) == find){
                 count++;
                 System.out.println(arr[i]);
             }
