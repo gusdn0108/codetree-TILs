@@ -7,11 +7,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         String str = sc.nextLine();
-
+        char a = sc.nextLine().charAt(0);
         int count = 0;
 
+
+
         for (int i = 0; i < str.length(); i++) {
-            if(str.charAt(i) == 'e'){
+            if(str.charAt(i) == a){
                 count++;
             }
         }
