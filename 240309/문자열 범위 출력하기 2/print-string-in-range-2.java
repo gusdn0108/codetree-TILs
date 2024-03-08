@@ -16,6 +16,8 @@ public class Main {
         for (int i = str.length()-1; i >= cov; i--) {
             if(str.length() > n){
                 System.out.print(str.charAt(i));
+            }else {
+                System.out.print(str.charAt(i));
             }
         }
 
