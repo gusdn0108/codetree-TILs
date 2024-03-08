@@ -7,10 +7,10 @@ public class Main {
         String str = sc.next();
         int n = sc.nextInt();
 
-        if (n >= str.length()) {
+        if (n > str.length()) {
             System.out.println(str);
         } else {
-           
+
             int cov = str.length() - n;
             int len = str.length() - 1;
 
