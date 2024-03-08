@@ -1,5 +1,3 @@
-import java.util.Arrays;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -7,20 +5,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         String str = sc.next();
-        // FunLeeBrosCode
         int n = sc.nextInt();
-        // 11
 
-        int cov = str.length()-n;
+        if (n >= str.length()) {
+            System.out.println(str);
+        } else {
+           
+            int cov = str.length() - n;
+            int len = str.length() - 1;
 
-        for (int i = str.length()-1; i >= cov; i--) {
-            if(str.length() > n){
-                System.out.print(str.charAt(i));
-            }else {
+            for (int i = len; i >= cov; i--) {
                 System.out.print(str.charAt(i));
             }
         }
-
-
     }
 }
