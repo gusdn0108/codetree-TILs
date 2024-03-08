@@ -8,7 +8,7 @@ public class Main {
 
         String str = sc.next();
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < str.length(); i++) {
             System.out.println(str.charAt(i));
         }
 
