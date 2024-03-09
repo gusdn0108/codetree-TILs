@@ -44,4 +44,4 @@ function dijkstra(start){
     
 }
 dijkstra(k);
-console.log(distance.slice(1).join('\n'));
+console.log(distance.slice(1).join('\n').map(e=>e===Number.MAX_SAFE_INTEGER?-1:e));
