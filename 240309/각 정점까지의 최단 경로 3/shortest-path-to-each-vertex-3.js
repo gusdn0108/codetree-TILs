@@ -45,5 +45,5 @@ function dijkstra(n){
 }
 dijkstra(1);
 for(let i = 2; i<=n; i++){
-    console.log(distance[i]);
+    console.log(distance[i]===Number.MAX_SAFE_INTEGER?-1:distance[i]);
 }
