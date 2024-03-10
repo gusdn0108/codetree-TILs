@@ -9,7 +9,7 @@ public class Main {
 
         String str1 = "Hello";
 
-        System.out.print(str+str1)
+        System.out.print(str+str1);
 
 
         
