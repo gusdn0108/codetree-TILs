@@ -6,15 +6,15 @@ public class Main {
         String str = sc.next();
 
         if(str.contains("ee")){
-            System.out.println("Yes");
+            System.out.print("Yes");
         }else {
-            System.out.println("No");
+            System.out.print("No");
         }
 
         if(str.contains("ab")){
-            System.out.println("Yes");
+            System.out.print("Yes");
         }else {
-            System.out.println("No");
+            System.out.print("No");
         }
     }
 }
