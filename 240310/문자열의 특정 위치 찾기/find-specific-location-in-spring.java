@@ -6,12 +6,12 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
-        String chr = sc.next();
+        char chr = sc.next().charAt(0);
 
         int location = 0;
 
         for(int i = 0; i < str.length()-1; i++){
-            if(str.chartAt(i) == chr){
+            if(str.charAt(i) == chr){
                 location = i;
             }else{
                 System.out.print("No");
