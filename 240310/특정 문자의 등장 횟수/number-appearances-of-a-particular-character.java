@@ -11,14 +11,15 @@ public class Main {
         int cnt1 = 0;
         int cnt2 = 0;
 
-   
-        for(int i = 0; i < len - 1; i++) {
-            if(str.charAt(i) == 'e' && str.charAt(i + 1) == 'e')
+
+        for (int i = 0; i < len - 1; i++) {
+            if (str.charAt(i) == 'e' && str.charAt(i + 1) == 'e')
                 cnt1++;
-            if(str.charAt(i) == 'e' && str.charAt(i + 1) == 'b')
+            if (str.charAt(i) == 'e' && str.charAt(i + 1) == 'b')
                 cnt2++;
         }
 
 
-	    System.out.print(cnt1 + " " + cnt2);
+        System.out.print(cnt1 + " " + cnt2);
     }
+}
