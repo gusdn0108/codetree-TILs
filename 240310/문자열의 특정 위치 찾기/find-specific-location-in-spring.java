@@ -9,13 +9,18 @@ public class Main {
         char chr = sc.next().charAt(0);
 
         int location = 0;
-
+        boolean isContinue = false;
         for(int i = 0; i < str.length()-1; i++){
             if(str.charAt(i) == chr){
                 location = i;
-            }else{
-                System.out.print("No");
+                isContinue = true;
             }
+        }
+
+        if(isContinue == true){
+            System.out.println(location);
+        }else {
+            System.out.println("No");
         }
 
     }
