@@ -14,7 +14,7 @@ public class Main {
             if(str.chartAt(i) == chr){
                 location = i;
             }else{
-                System.out.print("No")
+                System.out.print("No");
             }
         }
         
