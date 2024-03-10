@@ -5,8 +5,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         String str1 = sc.next();
-        String convert = str+str1;
-        if ((str + str1+convert).equals(convert)) {
+        String convert = str1+str;
+        if ((str + str1).equals(convert)) {
             System.out.println("true");
         }else {
             System.out.println("false");
