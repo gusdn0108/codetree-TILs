@@ -6,7 +6,7 @@ public class Main {
         String str = sc.next();
         String str1 = sc.next();
         String convert = str+str1;
-        if ((str + str1).equals(convert)) {
+        if ((str + str1+convert).equals(convert)) {
             System.out.println("true");
         }else {
             System.out.println("false");
