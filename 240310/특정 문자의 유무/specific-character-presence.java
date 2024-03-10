@@ -6,9 +6,9 @@ public class Main {
         String str = sc.next();
 
         if(str.contains("ee")){
-            System.out.print("Yes");
+            System.out.print("Yes ");
         }else {
-            System.out.print("No");
+            System.out.print("No ");
         }
 
         if(str.contains("ab")){
