@@ -6,12 +6,12 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
-        char chr = sc.next().charAt(0);
+        String chr = sc.next();
 
         int location = 0;
         boolean isContinue = false;
-        for(int i = 0; i < str.length()-1; i++){
-            if(str.charAt(i) == chr){
+        for(int i = 0; i < str.length(); i++){
+            if(str.contains(chr)){
                 location = i;
                 isContinue = true;
             }
