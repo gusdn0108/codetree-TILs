@@ -10,7 +10,7 @@ public class Main {
 
         int location = 0;
         boolean isContinue = false;
-        for(int i = 0; i < str.length()-1; i++){
+        for(int i = 1; i <= str.length(); i++){
             if(str.contains(chr)){
                 location = i;
                 isContinue = true;
