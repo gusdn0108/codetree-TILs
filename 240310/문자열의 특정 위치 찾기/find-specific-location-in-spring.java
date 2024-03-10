@@ -1,4 +1,4 @@
-import java.utils.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         String chr = sc.next();
-        
+
         int location = 0;
 
         for(int i = 0; i < str.length()-1; i++){
@@ -17,6 +17,6 @@ public class Main {
                 System.out.print("No");
             }
         }
-        
+
     }
 }
