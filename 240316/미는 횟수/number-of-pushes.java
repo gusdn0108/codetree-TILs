@@ -14,9 +14,11 @@ public class Main {
 
         for (int i = 0; i < str.length(); i++) {
             if(str1.equals(str.substring(i,len) + str.substring(0,i))){
+                cnt = i;
                 break;
+            } else if (str1 != str.substring(i,len)+str.substring(0,i)) {
+                cnt = -1;
             }
-            cnt = i+1;
 
         }
 
