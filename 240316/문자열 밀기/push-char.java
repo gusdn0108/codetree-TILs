@@ -8,7 +8,7 @@ public class Main {
 
         int len = str.length();
 
-        str = str.substring(len-1,len) + str.substring(0,len-1);
+        str = str.substring(len-(len-1),len) + str.substring(len-len,len-(len-1));
 
         System.out.println(str);
 
