@@ -15,7 +15,7 @@ for (let i = 1; i <= n; i++) {
 let answer = 0;
 for (let i = k; i <= n; i++) {
     for (let j = k; j <= n; j++) {
-        let sum = pre[i][j] - pre[i - 1][j] - pre[i][j - 1] + pre[i - 1][j - 1];
+        let sum = pre[i][j] - pre[i - k][j] - pre[i][j - k] + pre[i - k][j - k];
         answer = Math.max(answer, sum);
     }
 }
