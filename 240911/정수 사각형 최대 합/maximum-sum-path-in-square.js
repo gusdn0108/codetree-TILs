@@ -8,7 +8,7 @@ for (let i = 0; i < N; i++) {
     for (let j = 0; j < N; j++) {
         if (i === 0) {
             if(j===0) dp[i][j] = arr[i][j];
-            else dp[i][j] = dp[i][j-1];
+            else dp[i][j] = dp[i][j-1]+arr[i][j];
         } else if (j === 0) {
             dp[i][j] = dp[i - 1][j] + arr[i][j];
         }
@@ -17,5 +17,12 @@ for (let i = 0; i < N; i++) {
         }
     }
 }
+
+// for(let i = 0; i<N; i++){
+//     for(let j = 0; j<N; j++){
+//         process.stdout.write(dp[i][j]+" ");
+//     }
+//     console.log();
+// }
 
 console.log(Math.max(...dp[N - 1]));
