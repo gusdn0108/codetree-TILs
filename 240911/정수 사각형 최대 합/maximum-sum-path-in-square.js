@@ -18,11 +18,4 @@ for (let i = 0; i < N; i++) {
     }
 }
 
-// for(let i = 0; i<N; i++){
-//     for(let j = 0; j<N; j++){
-//         process.stdout.write(dp[i][j]+" ");
-//     }
-//     console.log();
-// }
-
 console.log(Math.max(...dp[N - 1]));
