@@ -17,4 +17,4 @@ for (let i = 0; i < N; i++) {
     }
 }
 
-console.log(dp[N-1][N-1]);
+console.log(Math.max(...dp[N - 1]));
