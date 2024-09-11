@@ -6,6 +6,7 @@ const dp = Array.from({ length: N }, () => Array.from({ length: N }, () => 1));
 
 const dx = [-1, 0, 1, 0];
 const dy = [0, 1, 0, -1];
+
 let result = 0;
 for (let i = 0; i < N; i++) {
     for (let j = 0; j < N; j++) {
@@ -16,9 +17,19 @@ for (let i = 0; i < N; i++) {
             if (arr[nx][ny] < arr[i][j]) {
                 dp[i][j] = Math.max(dp[i][j], dp[nx][ny] + 1);
                 result = Math.max(result, dp[i][j]);
+            }else if(arr[i][j]<arr[nx][ny]){
+                dp[nx][ny] = Math.max(dp[i][j]+1,dp[nx][ny]);
+                result = Math.max(dp[nx][ny],result);
             }
         }
     }
 }
+
+// for(let i = 0; i<N; i++){
+//     for(let j = 0; j<N; j++){
+//         process.stdout.write(dp[i][j]+" ");
+//     }
+//     console.log();
+// }
 
 console.log(result);
