@@ -7,7 +7,8 @@ const dp = Array.from({ length: N }, () => new Array(N));
 for (let i = 0; i < N; i++) {
     for (let j = 0; j < N; j++) {
         if (i === 0) {
-            dp[i][j] = arr[i][j];
+            if(j===0) dp[i][j] = arr[i][j];
+            else dp[i][j] = dp[i][j-1];
         } else if (j === 0) {
             dp[i][j] = dp[i - 1][j] + arr[i][j];
         }
