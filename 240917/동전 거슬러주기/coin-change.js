@@ -10,8 +10,8 @@ for (let i = 0; i < N; i++) {
 
 for (let i = coins[0]; i <= M; i++) {
     for (let j = 0; j < N; j++) {
-        if(i-coins[j]>0)
-            dp[i] = Math.min(dp[i],dp[i-coins[j]]+1);
+        if (i - coins[j] > 0)
+            dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
     }
 }
 
@@ -20,4 +20,4 @@ for (let i = coins[0]; i <= M; i++) {
 // }
 
 
-console.log(dp[M]);
+console.log(dp[M] !== Number.MAX_SAFE_INTEGER ? dp[M] : -1);
