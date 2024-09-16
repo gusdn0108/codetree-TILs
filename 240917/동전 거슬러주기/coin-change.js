@@ -8,6 +8,8 @@ for (let i = 0; i < N; i++) {
     dp[coins[i]] = 1;
 }
 
+coins.sort();
+
 for (let i = coins[0]; i <= M; i++) {
     for (let j = 0; j < N; j++) {
         if (i - coins[j] > 0)
