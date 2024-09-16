@@ -8,18 +8,11 @@ for (let i = 0; i < N; i++) {
     dp[coins[i]] = 1;
 }
 
-coins.sort();
-
-for (let i = coins[0]; i <= M; i++) {
+for (let i = 1; i <= M; i++) {
     for (let j = 0; j < N; j++) {
         if (i - coins[j] > 0)
             dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
     }
 }
-
-// for(let i = 0; i<M; i++){
-//     console.log(dp[i]);
-// }
-
 
 console.log(dp[M] !== Number.MAX_SAFE_INTEGER ? dp[M] : -1);
