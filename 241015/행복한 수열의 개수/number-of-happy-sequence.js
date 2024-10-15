@@ -19,7 +19,7 @@ for (let i = 0; i < N; i++) {
     }
 }
 
-for (let i = 0; i < N; i++) {
+for (let i = 0; i < N && N > 1; i++) {
     let re = 1;
     for (let j = 0; j < N; j++) {
         if (j - 1 < 0) continue;
