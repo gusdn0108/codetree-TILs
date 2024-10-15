@@ -5,12 +5,12 @@ const arr = input.slice(1).map(line => line.split(' ').map(Number));
 let answer = 0;
 
 for (let i = 0; i < N; i++) {
-    let re = 0;
+    let re = 1;
     for (let j = 0; j < N; j++) {
         if (arr[i][j] == arr[i][j - 1]) {
-            re = re === 0 ? 2 : re++;
+            re++;
         } else {
-            re = 0;
+            re = 1;
         }
         if (re >= M) {
             answer++;
@@ -20,13 +20,13 @@ for (let i = 0; i < N; i++) {
 }
 
 for (let i = 0; i < N; i++) {
-    let re = 0;
+    let re = 1;
     for (let j = 0; j < N; j++) {
         if (j - 1 < 0) continue;
         if (arr[j][i] == arr[j - 1][i]) {
-            re = re === 0 ? 2 : re++;
+            re++;
         } else {
-            re = 0;
+            re = 1;
         }
         if (re >= M) {
             answer++;
