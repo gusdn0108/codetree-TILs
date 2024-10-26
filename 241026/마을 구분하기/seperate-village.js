@@ -36,6 +36,6 @@ for (let i = 0; i < n; i++) {
     }
 }
 
-answerArr.sort();
+answerArr.sort((a, b) => a - b);
 console.log(villageCnt);
 console.log(answerArr.join('\n'));
