@@ -14,11 +14,10 @@ function isOutOfRange(x, y) {
 let result = 0;
 for (let i = 0; i < N; i++) {
     for (let j = 0; j < N; j++) {
-        for (let k = 0; k < N; k++) {
+        for (let k = 0; k < 4; k++) {
             const nx = i + dx[k];
             const ny = j + dy[k];
             if (isOutOfRange(nx, ny)) continue;
-            console.log(arr[nx][ny],arr[i][j]);
             if (arr[nx][ny] < arr[i][j]) {
                 dp[i][j] = Math.max(dp[i][j], dp[nx][ny] + 1);
                 result = Math.max(result, dp[i][j]);
