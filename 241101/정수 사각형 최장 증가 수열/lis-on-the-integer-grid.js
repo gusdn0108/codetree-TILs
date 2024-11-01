@@ -6,26 +6,35 @@ const dp = Array.from({ length: N + 1 }, () => Array.from({ length: N }, () => 1
 
 const dx = [-1, 0, 1, 0];
 const dy = [0, 1, 0, -1];
+const cells = [];
 
 function isOutOfRange(x, y) {
     return x < 0 || x >= N || y < 0 || y >= N;
 }
 
-let result = 0;
 for (let i = 0; i < N; i++) {
     for (let j = 0; j < N; j++) {
-        for (let k = 0; k < 4; k++) {
-            const nx = i + dx[k];
-            const ny = j + dy[k];
-            if (isOutOfRange(nx, ny)) continue;
-            if (arr[nx][ny] < arr[i][j]) {
-                dp[i][j] = Math.max(dp[i][j], dp[nx][ny] + 1);
-                result = Math.max(result, dp[i][j]);
-            } else if (arr[i][j] < arr[nx][ny]) {
-                dp[nx][ny] = Math.max(dp[i][j] + 1, dp[nx][ny]);
-                result = Math.max(dp[nx][ny], result);
-            }
+        cells.push([arr[i][j], i, j]);
+    }
+}
+cells.sort((a, b) => a[0] - b[0]);
+
+let result = 0;
+cells.forEach(cell => {
+    const [cur, x, y] = cell;
+    for (let i = 0; i < 4; i++) {
+        const nx = x + dx[i];
+        const ny = y + dy[i];
+        if (isOutOfRange(nx, ny)) continue;
+        if (arr[x][y] < arr[nx][ny]) {
+            dp[nx][ny] = Math.max(dp[nx][ny], dp[x][y] + 1);
         }
+    }
+})
+
+for (let i = 0; i < N; i++) {
+    for (let j = 0; j < N; j++) {
+        result = Math.max(result, dp[i][j]);
     }
 }
 
