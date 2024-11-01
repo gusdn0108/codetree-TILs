@@ -2,7 +2,7 @@ const fs = require('fs');
 const input = fs.readFileSync(0).toString().trim().split("\n");
 const N = Number(input[0]);
 const arr = input.slice(1).map(e => e.split(' ').map(el => Number(el)));
-const dp = Array.from({ length: N }, () => Array.from({ length: N }, () => 1));
+const dp = Array.from({ length: N + 1 }, () => Array.from({ length: N }, () => 1));
 
 const dx = [-1, 0, 1, 0];
 const dy = [0, 1, 0, -1];
