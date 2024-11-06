@@ -6,7 +6,7 @@ function rec(remain){
     if(remain === 0){
         answer++;
     }
-    for(let i = 1; i <= remain; i++){
+    for(let i = 1; i <= Math.min(4, remain); i++){
         rec(remain - i);
     }
 }
